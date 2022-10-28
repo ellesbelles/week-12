@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Basics</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> "Public Forum"</h1>
+    <div class="left">
+      <form id="form" class="form mb-3">
+        <div class="form-group">
+            <label for="message">Write your post here</label>
+            <textarea class="form-control" name="message" id="message" cols="30" rows="10" minlength="3" required></textarea>
+         </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+      </form>
+    </div>
+    <div class="right">
+      <h3>Your posts here</h3>
+      <div id="posts" class="list-group">
+        <div class="list-group-item">
+          <p>Post 1</p>
+          <span class="options">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash-alt"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
